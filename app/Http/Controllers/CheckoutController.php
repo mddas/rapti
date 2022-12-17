@@ -68,8 +68,8 @@ class CheckoutController extends Controller
             }
 
             $orderStatus = OrderStatus::where('title', 'initial')->first();
-
-            $all['status_id'] = $orderStatus->id;
+            // return $orderStatus."id";
+            $all['status_id'] =  1;//$orderStatus->id; //what is orderStatus id?
 
 
             $all['sub_total'] = Cart::subtotal();

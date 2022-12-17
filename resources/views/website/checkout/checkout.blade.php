@@ -243,8 +243,8 @@
                                             <td class="qty">
                                                 {{$item->qty}}
                                             </td>
-                                            <td class="amount">NRs {{ number_format($item->price) }} </td>
-                                            <td class="amount">NRs {{ number_format($item->price * $item->qty) }} </td>
+                                            <td class="amount">$ {{ number_format($item->price) }} </td>
+                                            <td class="amount">$ {{ number_format($item->price * $item->qty) }} </td>
 
                                         </tr>
                                     @empty
